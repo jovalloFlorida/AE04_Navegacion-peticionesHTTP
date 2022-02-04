@@ -1,0 +1,16 @@
+import * as React from 'react';
+import { Button, Text, View } from 'react-native';
+
+
+export function NotificationsScreen({ navigation }) {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Button
+          title="Go to Settings"
+          onPress={() => navigation.navigate('Settings')}
+        />
+        <Text style={{ padding: 10}}/>
+        <Button title="Go back" onPress={() => navigation.goBack()} />
+      </View>
+    );
+  }
